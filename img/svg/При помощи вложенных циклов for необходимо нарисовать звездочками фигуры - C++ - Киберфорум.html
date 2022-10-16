@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru">
+<head>
+	<title>При помощи вложенных циклов for необходимо нарисовать звездочками фигуры - C++ - Киберфорум</title>
+	<link rel="canonical" href="https://www.cyberforum.ru/cpp-beginners/thread220267.html" />
+	
+	<base href="https://www.cyberforum.ru/" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="C++, При помощи вложенных циклов for необходимо нарисовать звездочками фигуры" />
+<meta name="description" content="При помощи вложенных циклов for необходимо нарисовать звездочками фигуры C++ Решение и ответ на вопрос 220267" />
+
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" type="text/css" href="//cyberstatic.net/clientscript/vbulletin_css/cyberforum.css" />
+<link rel="stylesheet" type="text/css" href="//cyberstatic.net/clientscript/vbulletin_important.css" />
+
+
+
+<script>
+<!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "//cyberstatic.net/images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cyberstatic.net/clientscript/custom/jquery.browser.min.js"></script>
+
+<script src="//cyberstatic.net/clientscript/vbulletin_global2.js"></script>
+
+<script src="//cyberstatic.net/clientscript/vbulletin_menu.js"></script>
+<script src="//cyberstatic.net/clientscript/vbulletin_vbpost.js"></script>
+
+<script src="//cyberstatic.net/clientscript/vbulletin_post_loader.js"></script>
+
+
+<script src="//cyberstatic.net/clientscript/vbulletin_md5.js"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="Форум программистов и сисадминов Киберфорум RSS Feed" href="https://www.cyberforum.ru/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="С++ для начинающих - Киберфорум RSS" href="https://www.cyberforum.ru/external.php?type=RSS2&amp;forumids=77" />
+	
+
+<link type="application/opensearchdescription+xml" rel="search" href="https://www.cyberforum.ru/opensearch.xml" title="CyberForum.ru" />
+<link rel="stylesheet" href="//cyberstatic.net/clientscript/vbulletin_css/geshi.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="//cyberstatic.net/clientscript/vbulletin_css/spoiler.css" />
+<script>
+	var IMGDIR_BUTTON = "//cyberstatic.net/images/buttons";
+</script>
+
+
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+
+
+
+	<style type="text/css" id="vbulletin_showthread_css">
+	<!--
+	
+	#links div { white-space: nowrap; }
+	#links img { vertical-align: middle; }
+	-->
+	</style>
+</head>
+<body onload="">
+
+
+<div style="min-width: 1100px;  margin: 7px 20px 80px 20px;">
+
+
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+
+<div class="vbmenu_popup" id="vbbloglinks_menu" style="display:none;margin-top:3px" align="left">
+	<table cellpadding="4" cellspacing="1" border="0">
+
+	<tr>
+		<td class="vbmenu_option"><a href="https://www.cyberforum.ru/blogs/recent-entries/">Блоги программистов и сисадминов</a></td>
+	</tr>
+
+	</table>
+</div>
+<table class="tborder" cellpadding="5" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+
+	<td class="alt1" width="100%" style="padding-left: 10px">
+		<a href="https://www.cyberforum.ru/"  style="display: block; float: left; margin: 5px 25px 10px 0px"><img loading="lazy" decoding="async" border="0" src="//cyberstatic.net/images/cyberforum_logo.png" height="50px" alt="Форум программистов, компьютерный форум, киберфорум" title="Форум программистов, компьютерный форум, киберфорум" /></a>
+		<div class="smallfont" style="float: right; margin: 0px 0px 0px 20px;">
+			<div class="ya-share2" data-services="vkontakte,odnoklassniki" data-image="//cyberstatic.net/images/cyberforum_logo.png"></div>
+		</div>
+		
+			
+				<span class="forumtitle2">С++ для начинающих</span>
+			
+			<div class="smallfont"><a href="https://www.cyberforum.ru/" accesskey="1">Форум программистов и сисадминов Киберфорум</a>
+	<span class="navbar"> &gt; <a href="https://www.cyberforum.ru/programming/">Форум программистов</a></span>
+
+	<span class="navbar"> &gt; <a href="https://www.cyberforum.ru/c-cpp/">C/C++</a></span>
+
+	<span class="navbar"> &gt; <a href="https://www.cyberforum.ru/cpp/">C++</a></span>
+
+	<span class="navbar"> &gt; <a href="https://www.cyberforum.ru/cpp-beginners/">С++ для начинающих</a></span>
+</div>
+		
+	</td>
+
+	<td class="alt2" style="padding: 0px">
+		<table cellpadding="5" cellspacing="3" border="0" width="230px">
+		<tr>
+			<td class="smallfont" style="white-space: nowrap"><b><a href="https://www.cyberforum.ru/auth.php" class="forumtitle2">Войти</a></b></td>
+		</tr>
+		<tr>
+			<td>
+				<b><a href="https://www.cyberforum.ru/register.php">Регистрация</a></b><br/>
+				<a href="https://www.cyberforum.ru/login.php?do=lostpw">Восстановить пароль</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+
+</tr>
+</table>
+<div class="tborder" style="padding:1px; border-top-width:0px; margin-bottom: 3px;">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+	<tr align="center">
+		
+		<td class="vbmenu_control"><a href="https://www.cyberforum.ru/announcement.php?a=3">Правила</a></td>
+
+		<td class="vbmenu_control"><a href="https://www.cyberforum.ru/map.php">Карта форума</a></td>
+
+		<td class="vbmenu_control"><a href="https://www.cyberforum.ru/map.php?f=77">Темы раздела</a></td>
+
+
+		<td class="vbmenu_control"><a id="vbbloglinks" href="https://www.cyberforum.ru/blogs/">Блоги</a><script>vbmenu_register("vbbloglinks");</script></td>
+		
+			<td class="vbmenu_control"><a id="community" href="https://www.cyberforum.ru/cpp-beginners/thread220267.html?nojs=1#community" accesskey="6">Сообщество</a> <script> vbmenu_register("community"); </script></td>
+		
+		
+			
+				
+				<td class="vbmenu_control"><a id="navbar_search" href="https://www.cyberforum.ru/search.php" accesskey="4">Поиск</a> <script> vbmenu_register("navbar_search"); </script></td>
+			
+			
+		
+		
+		<td class="vbmenu_control" width="100%">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+
+
+<table id="yatopbanner" cellspacing="0" cellpadding="2" border="0" align="center" width="100%" class="tborder" style="margin: 0px 0px 3px 0px;"><tr>
+<td width="100%" class="alt1" align="center" valign="middle">
+
+<div id="yandex_rtb_R-A-29317-1"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-29317-1',
+    blockId: 'R-A-29317-1'
+  })
+})</script>
+
+
+</td>
+</tr></table>
+
+
+
+
+
+	
+	<div class="vbmenu_popup" id="community_menu" style="display:none;margin-top:3px" align="left">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr><td class="thead">Ссылки сообщества</td></tr>
+		
+	
+		
+			<tr><td class="vbmenu_option"><a href="https://www.cyberforum.ru/groups/">Социальные группы</a></td></tr>
+		
+		
+			<tr><td class="vbmenu_option"><a href="https://www.cyberforum.ru/members/albums.html">Изображения и альбомы</a></td></tr>
+		
+		
+		
+		
+		
+
+
+		</table>
+	</div>
+	
+	
+	
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none;margin-top:3px" align="left">
+		<table cellpadding="4" cellspacing="1" border="0" width="320px">
+
+    <tr>
+            <td class="thead">Поиск Yandex по форуму</td>
+    </tr>
+<tr>
+<td class="vbmenu_option" title="nohilite">
+
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://www.cyberforum.ru/yandex.php','arrow':false,'bg':'transparent','fontsize':13,'fg':'#000000','language':'ru','logo':'rb','publicname':'Yandex Site Search #364949','suggest':true,'target':'_blank','tld':'ru','type':2,'usebigdictionary':true,'searchid':364949,'webopt':false,'websearch':false,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/sitesearch" method="get" target="_blank"><input type="hidden" name="searchid" value="364949"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div><style type="text/css">.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+
+</td>
+</tr>
+    <tr>
+            <td class="thead">Поиск Google по форуму</td>
+    </tr>
+<tr>
+<td class="vbmenu_option" title="nohilite" width="300px">
+
+<script>
+  (function() {
+    var cx = 'partner-pub-6796001588681838:1260530199';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="https://www.cyberforum.ru/google.php" newWindow="true"></gcse:searchbox-only>
+
+</td>
+</tr>
+		<tr>
+			<td class="thead">Поиск по форуму</td>
+		</tr>
+
+		<tr>
+			<td class="vbmenu_option"><a href="https://www.cyberforum.ru/search.php" accesskey="4">Расширенный поиск</a></td>
+		</tr>
+
+
+		</table>
+	</div>
+	
+	
+	
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead" nowrap="nowrap">К странице...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="https://www.cyberforum.ru/index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput smallfont" id="pagenav_itxt" size="4" />
+				<input type="button" class="button" id="pagenav_ibtn" value="Вперёд" />
+			</form>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<div style="margin: 0px 0px 3px 0px;"></div>
+
+<table class="tborder" cellpadding="5" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+
+<td class="vbmenu_control" id="threadrating" nowrap="nowrap">
+	
+		<span id="threadrating_current">
+			Рейтинг&nbsp;<span title="Средняя оценка">4.96</span>/<span title="Всего голосов">55</span>: <img loading="lazy" decoding="async" class="inlineimg" src="//cyberstatic.net/images/rating/rating_5.gif" alt="Рейтинг темы: голосов - 55, средняя оценка - 4.96" border="0" />
+		</span>
+
+	
+</td>
+
+
+
+
+</tr>
+</table>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="posts">
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit1237950" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1237950" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/129159.html"><span id="tagg_129159" style="display:none;">@</span>VertuOzz</a>
+                    
+                    
+               
+            </div>
+			
+			
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_1237950_129159" title="Репутация пользователя" style="font-weight: bold">11</span> / <span title="Общая оценка (+11, -0)">11</span> / <span title="Лучшие ответы" style="font-weight: bold">2</span></div>
+				<div>Регистрация: 02.12.2010</div>
+				
+				
+				<div>Сообщений: 62</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post1237950.html" target="_blank" id="postcount1237950" name="1"><b>1</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_1237950" style="padding-top: 3px;" >
+
+		
+			<h1 style="color: #3774A4">При помощи вложенных циклов for необходимо нарисовать звездочками фигуры</h1>
+			<div class="smallfont shade" style="margin: 10px 0px 0px 30px">25.12.2010, 19:30. <b>Показов</b> 9940. <b>Ответов</b> <a target="_blank" href="https://www.cyberforum.ru/threadposts220267.html">7</a></div>
+			<div class="smallfont shade" style="margin: 5px 0px 0px 30px"><b>Метки</b> нет <img loading="lazy" decoding="async" src="//cyberstatic.net/images/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg" style="display:none" alt="" /> (<a href="https://www.cyberforum.ru/tags/">Все метки</a>)</div>
+			<hr size="1" style="color: #AAAAAA; margin: 7px 0px 10px 0px" />
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_1237950" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			Доброго времени суток! Уважаемые знатоки, помогите пожалуйста решить задачку: при помощи вложенных циклов <b>for</b> необходимо нарисовать фигуры:<br />
+xxxx    x         x<br />
+x   x    xx      x x<br />
+xxxx    xxx   xxxxx
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+	<div style="margin-top: 10px">
+		__________________<br />
+		Помощь в написании контрольных, курсовых и дипломных работ, диссертаций <a rel="nofollow noopener sponsored" target="_blank" href="https://www.cyberforum.ru/edu_order.php">здесь</a>
+	</div>
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_1237950">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 0">0</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+<div style="margin: 3px 0px 3px 0px; display: block">
+	<table class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%">
+		<tr valign="top">
+			<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;">
+			</td>
+			<td class="alt1" align="left">
+
+
+<div style="width: 600px; height: auto; margin-right: auto;">
+   <div id="movie_video"></div>
+</div>
+<script type="text/javascript" src="https://vak345.com/s.js?v=8d94458a2b7741a172956c4b6a86f3a7" async></script>
+
+
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+
+<div style="margin: 3px 0px 0px 0px">
+	<table class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%">
+		<tr valign="top">
+			<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="2">
+				<div class="smallfont" style="margin-top: 2px;">
+					<a class="bigusername" href="https://www.cyberforum.ru/members/20461.html">Programming</a>
+					<div class="smallfont">Эксперт</div>
+					<div><span title="Репутация пользователя"><b>94731</b></span> / <span title="Благодарности за сообщения">64177</span> / <span title="Лучшие ответы"><b>26122</b></span></div>
+				<div>Регистрация: 12.04.2006</div>
+				<div>Сообщений: 116,782</div>
+				</div>
+			</td>
+		    <td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; padding: 3px 5px 3px 5px;" height="15px">
+			25.12.2010, 19:30
+		    </td>
+		</tr>
+		<tr>
+			<td class="alt1" align="left">
+			<div style="margin: 2px 2px 2px 5px;">
+Ответы с готовыми решениями: 
+<br />
+<p><strong><a target="_blank" href="https://www.cyberforum.ru/cpp-beginners/thread698129.html">Проверка при помощи вложенных блоков try</a></strong><br />Посчитать уравнение ( у=log4(x2-4)+1/x)при вводе х с клавиатуры, но должны выполнятся условия:  
+1....</p><p><img class="inlineimg" src="//cyberstatic.net/images/misc/tick.png" title="Есть решение (1)" border="0" alt="" /> <strong><a target="_blank" href="https://www.cyberforum.ru/c-beginners/thread1140465.html">Вычислить сумму при помощи вложенных циклов for</a></strong><br />S=\sum_{i=0}^{N}\sum_{j=0}^{M}(i+j)  
+Нужно вычислить при помощи вложенных циклов for   
+N=50  
+M=15...</p><p><strong><a target="_blank" href="https://www.cyberforum.ru/pascalabc/thread993075.html">Использование вложенных циклов и ветвлений при обработке массивов Обработка матриц</a></strong><br />Ребята, помогите пожайлуста написать 3 программы, в ПАСКАЛЕ, Очень вас прошу прямо очень срочно,...</p><p><img class="inlineimg" src="//cyberstatic.net/images/misc/tick.png" title="Есть решение (1)" border="0" alt="" /> <strong><a target="_blank" href="https://www.cyberforum.ru/python-science/thread2221968.html">Перебор при помощи циклов</a></strong><br />Добрый день,  
+  
+Господа, подскажите пожалуйста с помощью каких циклов или операторов можно сделать...</p>
+
+			</div>
+			
+<span class="thumbs-post-rate" title="Рейтинг сообщения 7">7</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+<div id="cyber_adsc1" style="margin: 3px 0px 0px 0px; display: block">
+	<table class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%">
+		<tr valign="top">
+			<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;">
+			</td>
+			<td class="alt1" align="left">
+
+<div id="yandex_rtb_R-A-29317-5"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-29317-5',
+    blockId: 'R-A-29317-5'
+  })
+})</script>
+
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit1237966" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1237966" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/113742.html"><span id="tagg_113742" style="display:none;">@</span>asics</a>
+                    
+                    
+               
+            </div>
+			<div class="smallfont">Freelance</div>
+			<div class="smallfont" style="margin-top: 3px"><img src="//cyberstatic.net/images/icons/cpp.png" alt="Эксперт С++" border="" style="margin-right: 5px" /></div>
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_1237966_113742" title="Репутация пользователя" style="font-weight: bold">2886</span> / <span title="Общая оценка (+1821, -0)">1821</span> / <span title="Лучшие ответы" style="font-weight: bold">356</span></div>
+				<div>Регистрация: 09.09.2010</div>
+				
+				
+				<div>Сообщений: 3,841</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				25.12.2010, 19:36
+				
+				
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post1237966.html" target="_blank" id="postcount1237966" name="2"><b>2</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_1237966" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_1237966" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			<b>VertuOzz</b>, <div style="margin: 5px 10px 20px 30px"><table class="cpp"><thead><tr><td colspan="2"  class="head">C++</td></tr></thead><tbody><tr class="li1"><td><div id="674593272" style="height: 505px" class="codeframe"><table><tr class="li1"><td class="ln" style="padding: 0px 10px 0px 5px;"><pre class="de1">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+</pre></td><td class="de1"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">6</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+&nbsp; &nbsp;<span class="br0">&#123;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">if</span><span class="br0">&#40;</span>i <span class="sy1">&gt;=</span> <span class="nu0">3</span><span class="br0">&#41;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;* &quot;</span><span class="sy4">;</span>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">else</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'*'</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="br0">&#125;</span>
+&nbsp;
+&nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">6</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+&nbsp; &nbsp;<span class="br0">&#123;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">if</span><span class="br0">&#40;</span>i <span class="sy1">==</span> <span class="nu0">2</span><span class="br0">&#41;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'*'</span><span class="sy4">;</span>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;* &quot;</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="br0">&#125;</span>
+&nbsp;
+&nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">12</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+&nbsp; &nbsp;<span class="br0">&#123;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">if</span><span class="br0">&#40;</span>i <span class="sy1">==</span> <span class="nu0">3</span> <span class="sy3">||</span> i <span class="sy1">==</span> <span class="nu0">6</span><span class="br0">&#41;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;* &quot;</span><span class="sy4">;</span>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'*'</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="br0">&#125;</span>
+&nbsp; &nbsp;<span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre></td></tr></table></div></td></tr></tbody></table></div>
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_1237966">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 1">1</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit1237994" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1237994" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/129159.html"><span id="tagg_129159" style="display:none;">@</span>VertuOzz</a>
+                    
+                    
+               
+            </div>
+			
+			
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_1237994_129159" title="Репутация пользователя" style="font-weight: bold">11</span> / <span title="Общая оценка (+11, -0)">11</span> / <span title="Лучшие ответы" style="font-weight: bold">2</span></div>
+				<div>Регистрация: 02.12.2010</div>
+				
+				
+				<div>Сообщений: 62</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				25.12.2010, 19:42
+				
+				&nbsp;<b>[ТС]</b>
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post1237994.html" target="_blank" id="postcount1237994" name="3"><b>3</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_1237994" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_1237994" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			Спасибо! А если просто<br />
+*<br />
+**<br />
+***<br />
+****
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_1237994">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 0">0</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit1238005" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1238005" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/113742.html"><span id="tagg_113742" style="display:none;">@</span>asics</a>
+                    
+                    
+               
+            </div>
+			<div class="smallfont">Freelance</div>
+			<div class="smallfont" style="margin-top: 3px"><img src="//cyberstatic.net/images/icons/cpp.png" alt="Эксперт С++" border="" style="margin-right: 5px" /></div>
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_1238005_113742" title="Репутация пользователя" style="font-weight: bold">2886</span> / <span title="Общая оценка (+1821, -0)">1821</span> / <span title="Лучшие ответы" style="font-weight: bold">356</span></div>
+				<div>Регистрация: 09.09.2010</div>
+				
+				
+				<div>Сообщений: 3,841</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				25.12.2010, 19:44
+				
+				
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post1238005.html" target="_blank" id="postcount1238005" name="4"><b>4</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_1238005" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_1238005" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			<b>VertuOzz</b>, <div style="margin: 5px 10px 5px 30px"><table class="cpp"><thead><tr><td colspan="2"  class="head">C++</td></tr></thead><tbody><tr class="li1"><td><div id="718902944" style="height: 249px" class="codeframe"><table><tr class="li1"><td class="ln" style="padding: 0px 10px 0px 5px;"><pre class="de1">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="de1"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">4</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+&nbsp; &nbsp;<span class="br0">&#123;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> j <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> j <span class="sy1">&lt;=</span> i<span class="sy4">;</span> <span class="sy2">++</span>j<span class="br0">&#41;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;* &quot;</span><span class="sy4">;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="br0">&#125;</span>
+&nbsp;
+&nbsp; &nbsp;<span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre></td></tr></table></div></td></tr></tbody></table></div>
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_1238005">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 1">1</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit1238016" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1238016" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/129159.html"><span id="tagg_129159" style="display:none;">@</span>VertuOzz</a>
+                    
+                    
+               
+            </div>
+			
+			
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_1238016_129159" title="Репутация пользователя" style="font-weight: bold">11</span> / <span title="Общая оценка (+11, -0)">11</span> / <span title="Лучшие ответы" style="font-weight: bold">2</span></div>
+				<div>Регистрация: 02.12.2010</div>
+				
+				
+				<div>Сообщений: 62</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				25.12.2010, 20:32
+				
+				&nbsp;<b>[ТС]</b>
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post1238016.html" target="_blank" id="postcount1238016" name="5"><b>5</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_1238016" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_1238016" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			<b>asics</b>, большое человеческое <font color="Magenta">спасибо!</font><br />
+<br />
+<font size="1"><font color="grey"><i>Добавлено через 45 минут</i></font></font><br />
+<b>asics</b>, извините, если отвлекаю, но займу еще минутку Вашего внимания. Как вывести такую фигуру? (Пустой прямоугольник)<br />
+****<br />
+*      *<br />
+****
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_1238016">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 0">0</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit1238284" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1238284" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/113742.html"><span id="tagg_113742" style="display:none;">@</span>asics</a>
+                    
+                    
+               
+            </div>
+			<div class="smallfont">Freelance</div>
+			<div class="smallfont" style="margin-top: 3px"><img src="//cyberstatic.net/images/icons/cpp.png" alt="Эксперт С++" border="" style="margin-right: 5px" /></div>
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_1238284_113742" title="Репутация пользователя" style="font-weight: bold">2886</span> / <span title="Общая оценка (+1821, -0)">1821</span> / <span title="Лучшие ответы" style="font-weight: bold">356</span></div>
+				<div>Регистрация: 09.09.2010</div>
+				
+				
+				<div>Сообщений: 3,841</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				25.12.2010, 21:17
+				
+				
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post1238284.html" target="_blank" id="postcount1238284" name="6"><b>6</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_1238284" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_1238284" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			<b>VertuOzz</b>, <div style="margin: 5px 10px 5px 30px"><table class="cpp"><thead><tr><td colspan="2"  class="head">C++</td></tr></thead><tbody><tr class="li1"><td><div id="114683594" style="height: 361px" class="codeframe"><table><tr class="li1"><td class="ln" style="padding: 0px 10px 0px 5px;"><pre class="de1">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="de1"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&nbsp; &nbsp;<span class="kw4">const</span> <span class="kw4">size_t</span> rows <span class="sy1">=</span> <span class="nu0">3</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="kw4">const</span> <span class="kw4">size_t</span> cols <span class="sy1">=</span> <span class="nu0">4</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> rows<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+&nbsp; &nbsp;<span class="br0">&#123;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> j <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> j <span class="sy1">&lt;</span> cols<span class="sy4">;</span> <span class="sy2">++</span>j<span class="br0">&#41;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#123;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw1">if</span><span class="br0">&#40;</span>i <span class="sy1">&gt;</span> <span class="nu0">0</span> <span class="sy3">&amp;&amp;</span> i <span class="sy1">&lt;</span> rows <span class="sy2">-</span> <span class="nu0">1</span> <span class="sy3">&amp;&amp;</span> j <span class="sy1">&gt;</span> <span class="nu0">0</span> <span class="sy3">&amp;&amp;</span> j <span class="sy1">&lt;</span> cols <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">&#41;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'*'</span><span class="sy4">;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#125;</span>
+&nbsp; &nbsp; &nbsp; &nbsp;std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+&nbsp; &nbsp;<span class="br0">&#125;</span>
+&nbsp;
+&nbsp; &nbsp;<span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre></td></tr></table></div></td></tr></tbody></table></div>
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_1238284">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 2">2</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit8721961" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post8721961" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/763321.html"><span id="tagg_763321" style="display:none;">@</span>Aster</a>
+                    
+                    
+               
+            </div>
+			
+			
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_8721961_763321" title="Репутация пользователя" style="font-weight: bold">0</span> / <span title="Общая оценка (+0, -0)">0</span> / <span title="Лучшие ответы" style="font-weight: bold">0</span></div>
+				<div>Регистрация: 07.02.2016</div>
+				
+				
+				<div>Сообщений: 3</div>
+				
+				
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				07.02.2016, 14:28
+				
+				
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post8721961.html" target="_blank" id="postcount8721961" name="7"><b>7</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_8721961" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_8721961" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			Не могу разобраться с циклами,помогите пожалуйста вывести эту фигуру<br />
+<br />
+* * * * *<br />
+* * * *<br />
+* * *<br />
+* *<br />
+*<br />
+* *<br />
+* * *<br />
+* * * *<br />
+* * * * *
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_8721961">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 0">0</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+
+	
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+	<div id="edit8724281" style="padding:0px 0px 3px 0px">
+	
+
+
+
+<table id="post8724281" class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="top">
+	<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="3">
+            <div>
+               
+                    
+                        <a class="bigusername" href="https://www.cyberforum.ru/members/356548.html"><span id="tagg_356548" style="display:none;">@</span>_Ivana</a>
+                    
+                    
+               
+            </div>
+			
+			
+			
+			
+		
+			<div class="smallfont" style="margin-top: 2px;">
+				
+					
+					<div><span id="repdisplay_8724281_356548" title="Репутация пользователя" style="font-weight: bold">4814</span> / <span title="Общая оценка (+2275, -0.5)">2274</span> / <span title="Лучшие ответы" style="font-weight: bold">287</span></div>
+				<div>Регистрация: 01.03.2013</div>
+				
+				
+				<div>Сообщений: 5,933</div>
+				
+				<div>Записей в блоге: <a href="https://www.cyberforum.ru/blogs/356548/">26</a></div>
+				
+<!-- show awards -->
+
+<!-- /show awards -->
+
+				
+			</div>
+		
+	</td>
+</tr>
+<tr>
+	
+		<td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px;" height="15px" >
+			
+				07.02.2016, 23:20
+				
+				
+				
+			
+		</td>
+		<td class="alt2 smallfont" style="font-weight: normal; border-bottom: 1px solid #AAAAAA; border-right: 0px; padding: 3px 5px 3px 5px; text-align: right;"  width="30px" height="15px">
+
+
+	
+	<a href="https://www.cyberforum.ru/post8724281.html" target="_blank" id="postcount8724281" name="8"><b>8</b></a>
+	
+	
+</td>
+	
+</tr>
+
+<tr valign="top">
+		<td class="alt1" colspan="2" id="td_post_8724281" style="padding-top: 3px;" >
+
+		
+
+		
+
+		
+			
+		
+
+		<div id="post_message_8724281" style="margin: 2px 2px 2px 5px;">
+
+
+
+			
+
+			<div style="margin: 5px 10px 5px 30px"><table class="cpp"><thead><tr><td colspan="2"  class="head">C++</td></tr></thead><tbody><tr class="li1"><td><div id="737682290" style="height: 153px" class="codeframe"><table><tr class="li1"><td class="ln" style="padding: 0px 10px 0px 5px;"><pre class="de1">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="de1"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">void</span> l<span class="br0">&#40;</span><span class="kw4">int</span> n<span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="kw1">if</span> <span class="br0">&#40;</span>n<span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="kw3">cout</span><span class="sy1">&lt;&lt;</span><span class="st0">&quot;* &quot;</span><span class="sy4">;</span> l<span class="br0">&#40;</span>n<span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span><span class="br0">&#125;</span> <span class="kw1">else</span> <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span><span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="sy4">;</span><span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> f<span class="br0">&#40;</span><span class="kw4">int</span> n<span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="kw1">if</span> <span class="br0">&#40;</span>n<span class="sy1">&gt;</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>l<span class="br0">&#40;</span>n<span class="br0">&#41;</span><span class="sy4">;</span> f<span class="br0">&#40;</span>n<span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span> l<span class="br0">&#40;</span>n<span class="br0">&#41;</span><span class="sy4">;</span><span class="br0">&#125;</span> <span class="kw1">else</span> l<span class="br0">&#40;</span>n<span class="br0">&#41;</span><span class="sy4">;</span><span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>f<span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span><span class="br0">&#125;</span></pre></td></tr></table></div></td></tr></tbody></table></div>
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+
+
+
+
+
+	<div style="margin-top: 5px">
+		<span id="thumbs_box_8724281">
+    <span class="post">
+        <span>
+            
+            <span class="thumbs-post-rate" title="Рейтинг сообщения 1">1</span>
+            
+        </span>
+    </span>
+</span>
+	</div>
+
+
+		
+		
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="margin: 3px 0px 0px 0px">
+	<table class="tborder" cellpadding="5" cellspacing="0" border="0" width="100%">
+		<tr valign="top">
+			<td class="alt2" width="170px" style="border-right: 1px solid #AAAAAA;" rowspan="2">
+				<div class="smallfont" style="margin-top: 2px;">
+					<a class="bigusername" href="https://www.cyberforum.ru/members/22622.html">IT_Exp</a>
+					<div class="smallfont">Эксперт</div>
+					<div><span title="Репутация пользователя"><b>87844</b></span> / <span title="Благодарности за сообщения">49110</span> / <span title="Лучшие ответы"><b>22898</b></span></div>
+				<div>Регистрация: 17.06.2006</div>
+				<div>Сообщений: 92,604</div>
+				</div>
+			</td>
+		    <td class="alt2 smallfont" style="font-weight:normal; border-bottom: 1px solid #AAAAAA; padding: 3px 5px 3px 5px;" height="15px">
+			07.02.2016, 23:20
+		    </td>
+		</tr>
+		<tr>
+		    <td class="alt1" align="left">
+			<div style="margin: 2px 2px 2px 5px;">
+
+<b>Помогаю со студенческими работами <a rel="nofollow noopener sponsored" target="_blank" href="https://www.cyberforum.ru/edu_order.php">здесь</a></b>
+
+<p><a target="_blank" href="https://www.cyberforum.ru/java-j2se/thread1115751.html">Реализация сложения и вычитания двух двоичных чисел при помощи циклов</a><br />Как с помощью циклов можно реализовать сложение и вычитание двух двоичных чисел? Определяя по...</p><p><img class="inlineimg" src="//cyberstatic.net/images/misc/tick.png" title="Есть решение (1)" border="0" alt="" /> <a target="_blank" href="https://www.cyberforum.ru/cpp-beginners/thread99913.html">Составить программу для решения задачи с целыми числами при помощи циклов</a><br />Что за бред...Как это сделать?  
+  
+Составить программу для решения задачи с целыми числами при...</p><p><img class="inlineimg" src="//cyberstatic.net/images/misc/tick.png" title="Есть решение (1)" border="0" alt="" /> <a target="_blank" href="https://www.cyberforum.ru/cpp-beginners/thread2213571.html">C использованием циклов for вывести фигуру звездочками с цифрами</a><br />Доброго времени суток! Уважаемые знатоки, помогите пожалуйста решить задачку: при  вложенных циклов...</p><p><a target="_blank" href="https://www.cyberforum.ru/cpp-beginners/thread527112.html">Нарисовать елку при помощи рекурсии</a><br />помогите пожалуйста нарисовать елочку при помощи рекурсии...</p>
+
+
+<br />
+<a target="_blank" href="https://www.cyberforum.ru/search.php?do=process&amp;q=При помощи вложенных циклов for необходимо нарисовать звездочками фигуры&amp;forumchoice[]=77&amp;childforums=1&amp;replyless=0&amp;replylimit=1&amp;nocache=0">Искать еще темы с ответами</a>
+<br /><br />
+Или воспользуйтесь поиском по форуму:
+<table width="700px"><tr><td>
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://www.cyberforum.ru/yandex.php','arrow':false,'bg':'transparent','fontsize':13,'fg':'#000000','language':'ru','logo':'rb','publicname':'Yandex Site Search #364949','suggest':true,'target':'_blank','tld':'ru','type':2,'usebigdictionary':true,'searchid':364949,'webopt':false,'websearch':false,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/sitesearch" method="get" target="_blank"><input type="hidden" name="searchid" value="364949"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div><style type="text/css">.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+</td></tr></table>
+
+			</div>
+			
+<span class="thumbs-post-rate" title="Рейтинг сообщения 8">8</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<div id="lastpost"></div>
+</div>
+
+
+<div>
+	<div class="page" style="text-align: left;">
+		<div style="margin: 0px 3px 0px 3px" align="left">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="top">
+	
+		<td>
+			<table class="smallfont" width="240px" cellspacing="0" cellpadding="0" border="0"><tr>
+				<td>
+					<a target="_blank" href="https://www.cyberforum.ru/newreply.php?do=newreply&amp;noquote=1&amp;p=8724281"><img loading="lazy" decoding="async" class="buttonimg" src="//cyberstatic.net/images/buttons/reply.png" alt="Ответ" border="0" /></a>
+				</td>
+				<td>
+					<a target="_blank" href="https://www.cyberforum.ru/newthread.php?do=newthread&amp;f=77"><img loading="lazy" decoding="async" class="buttonimg" src="//cyberstatic.net/images/buttons/newthread.png" alt="Создать тему" border="0" /></a>
+				</td>
+			</tr></table>
+		</td>
+	
+	
+	
+</tr>
+</table>
+
+
+
+
+
+
+	<script src="//cyberstatic.net/clientscript/vbulletin_lightbox.js"></script>
+	<script>
+	<!--
+	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
+	//-->
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td width="100%" valign="top">
+		
+	</td>
+	<td class="smallfont" align="right">
+		
+	</td>
+</tr>
+</table>
+
+<table cellspacing="0" cellpadding="2" border="0" align="center" width="100%" class="tborder" style="margin: 3px 0px 3px 0px;"><tr>
+<td width="100%" class="alt1" align="center" valign="middle">
+
+<div id="yandex_rtb_R-A-29317-4"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-29317-4',
+    blockId: 'R-A-29317-4'
+  })
+})</script>
+
+</td>
+</tr></table>
+
+
+		</div>
+	</div>
+</div>
+
+<div style="margin: 5px 3px 0px 3px">
+<form action="https://www.cyberforum.ru/index.php" method="get" style="clear:left">
+<table cellpadding="5" cellspacing="0" border="0" class="tborder" align="center" style="width: 100%;">
+<tr>
+	
+	
+		<td class="tfoot">
+			<span class="smallfont">КиберФорум - форум программистов, компьютерный форум, программирование</span>
+		</td>
+	<td class="tfoot" align="right" colspan="2">
+		<div class="smallfont">
+			<strong>
+				<a href="https://www.cyberforum.ru/donate.php">Поддержать</a> -
+				
+				<a href="https://www.cyberforum.ru/advert.php">Реклама</a> -
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://www.cyberforum.ru/sendmessage.php" accesskey="9">Обратная связь</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+<table cellpadding="5" cellspacing="0" border="0" class="tborder" align="center" style="width: 100%;">
+<tr class="alt1" align="right">
+	<td align="left" class="smallfont">
+		Powered by vBulletin<br />Copyright &copy;2000 - 2022, CyberForum.ru
+	</td>
+	<td align="right">
+<img id="licnt3981" width="88" height="31" style="border:0" 
+title="LiveInternet: number of pageviews for 24 hours, of visitors for 24 hours and for today is shown"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP/yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/><script>(function(d,s){d.getElementById("licnt3981").src=
+"//counter.yadro.ru/hit?t12.2;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script>
+
+
+	</td>
+</tr>
+</table>
+</form>
+
+
+
+
+<script type='text/javascript' data-cfasync='false'> 
+(function(){
+  var ud;
+  try { ud = localStorage.getItem('e4b7d1b727_uid'); } catch (e) { } 
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.charset = 'utf-8';
+  script.async = 'true';
+  script.src = 'https://absoluteroute.com/bens/vinos.js?23402&u=' + ud + '&a=' + Math.random();
+  document.body.appendChild(script);
+})();
+</script>
+
+
+
+<div id="mp_custom_3887"></div>
+<script>(function(w, d, n, s, t) {w[n] = w[n] || [];w[n].push(function() {mp_banners('3887');});t = d.getElementsByTagName("script")[0];s = d.createElement("script");s.type = "text/javascript";s.src = "https://mpsuadv.ru/lib/custom/banners.js";s.async = true;t.parentNode.insertBefore(s, t);})(this, this.document, "mpsuRotator");</script>
+
+
+</div>
+
+<script>
+var krtsts = {
+   "bburl": "https://www.cyberforum.ru"
+};
+</script>
+<script async src="//cyberstatic.net/clientscript/kr_scripts/tests/addedit.js"></script>
+<script async src="//cyberstatic.net/clientscript/kr_scripts/bestanswer/bestanswer.js"></script>
+<script>
+      var krba_options = {
+          img_is_answer: '//cyberstatic.net/images/buttons/is_answer.png',
+          img_is_not_answer: '//cyberstatic.net/images/buttons/is_not_answer.png'
+      },
+      KRBA = new AJAX_KRBA(krba_options);
+</script>
+
+<link rel="stylesheet" type="text/css" href="//cyberstatic.net/clientscript/kr_scripts/thumbsup/thumbs.css" />
+<script>
+var krthumbs = {
+  confirm_delete_pos: 'Вы действительно хотите удалить все положительные оценки?',
+  confirm_delete_neg: 'Вы действительно хотите удалить все отрицательные оценки?'
+}
+</script>
+<script async src="//cyberstatic.net/clientscript/kr_scripts/thumbsup/thumbsup.js"></script>
+
+<script>
+var krtsts = new krtsts_ctrl();
+</script>
+
+<style type="text/css">
+	span.sortarrow {position:absolute;}
+	span.sortarrow img {border:0;}
+	a.sortheader {text-decoration:none; display:block; width:100%;}
+</style>
+
+<script async src="//cyberstatic.net/clientscript/vbulletin_autosave.js"></script>
+<script async src="//cyberstatic.net/clientscript/custom/CtrlPagenav.js"></script>
+<script async src="//cyberstatic.net/clientscript/custom/spoiler.js"></script>
+<script async src="//cyberstatic.net/clientscript/custom/topbutton.js"></script>
+<script async src="//cyberstatic.net/clientscript/sorttable.js"></script>
+
+<script async src="//cyberstatic.net/clientscript/custom/selectcode.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-595018-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-595018-2');
+</script>
+
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(50312308, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50312308" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+<script async>
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+
+<div id="top-link">
+	<span id="topicon" title="Наверх"></span><span id="toptext">Наверх</span>
+</div>
+
+<script async src="//yastatic.net/share2/share.js"></script>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+window.orig_onload = window.onload;
+window.onload = function() {
+var cpost=document.location.hash.substring(1);var cpost2='';if(cpost){ var ispost=cpost.substring(0,4)=='post';
+					if(ispost)cpost2='post_'+cpost.substring(4);if((cobj = fetch_object(cpost))||(cobj = fetch_object(cpost2))){cobj.scrollIntoView(true);}
+					else if(ispost){cpostno = cpost.substring(4,cpost.length);if(parseInt(cpostno)>0){location.replace('https://www.cyberforum.ru/showthread.php?p='+cpostno);};} }
+
+if(typeof window.orig_onload == "function") window.orig_onload();
+}
+
+//]]>
+</script>
+</body>
+</html>
